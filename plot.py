@@ -4,7 +4,7 @@ import plotly as py
 import plotly.graph_objs as go
 
 Xvals=[]; Yvals=[]
-f = open('./Task_2.txt', 'r')
+f = open('ENTER INPUT FILE NAME', 'r')
 
 for line in f:
     a, b = line.split('\t', 1)
@@ -18,13 +18,13 @@ data = [go.Bar(
             textposition = 'outside',
             opacity=0.8,
             marker=dict(
-                color='rgb(75,203,242)',
+                color='rgb(RED_VAL,GREEN_VAL,BLUE_VAL)',
                 )
     )]
 
 layout = go.Layout(
-        title='Wordcount of swedish pronouns',
+        title='ENTER TITLE HERE',
         )
 
 fig= go.Figure(data=data, layout=layout)
-py.offline.plot(fig, filename='output_bar_task_2')
+py.offline.plot(fig, filename='ENTER OUTPUT FILE NAME HERE')
