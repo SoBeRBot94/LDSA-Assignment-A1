@@ -24,6 +24,7 @@ data = [go.Bar(
 
 layout = go.Layout(
         title='Wordcount of all occurencess of words that start with the same first letter',
+        font=dict(color = "black", size = 16),
         )
 
 fig= go.Figure(data=data, layout=layout)
